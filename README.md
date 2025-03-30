@@ -1,6 +1,6 @@
-# firebase_auth_tutorials
+"ShediFy" Filling Station Management System Mobile Application 
 
-A new Flutter project.
+A new Flutter project with Firebase Configured.
 
 ## Getting Started
 
