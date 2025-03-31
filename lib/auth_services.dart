@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth_tutorials/userModel.dart';
-import 'package:flutter/animation.dart';
+import 'package:firebase_auth_tutorials/model_user.dart';
 
 class AuthteServices {
   // firebase instance
@@ -43,6 +42,20 @@ class AuthteServices {
   }
 
   // login using email & pass
+  Future loginusingEmailAndPassword(String email, String password) async {
+    try {
+      UserCredential result = await _auth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      User? user = result.user;
+      return _userwithFirebaseUserUid(user);
+    } catch (err) {
+      print(err.toString());
+      return null;
+    }
+  }
+
   // login using gmail
   // logout
   Future signOut() async {

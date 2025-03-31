@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/authServices.dart';
+import 'package:firebase_auth_tutorials/auth_services.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:flutter/material.dart';
 

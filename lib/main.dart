@@ -1,5 +1,5 @@
-import 'package:firebase_auth_tutorials/authServices.dart';
-import 'package:firebase_auth_tutorials/userModel.dart';
+import 'package:firebase_auth_tutorials/auth_services.dart';
+import 'package:firebase_auth_tutorials/model_user.dart';
 import 'package:firebase_auth_tutorials/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
