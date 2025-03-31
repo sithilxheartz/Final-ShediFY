@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/authServices.dart';
+import 'package:firebase_auth_tutorials/services/auth_services.dart';
 import 'package:firebase_auth_tutorials/shared/main_button.dart';
 import 'package:firebase_auth_tutorials/shared/styles.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
@@ -60,7 +60,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                       Text(
-                        "Log In",
+                        "Shed Management Mobile Application",
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Column(
                           children: [
-                            SizedBox(height: 15),
+                            SizedBox(height: 30),
                             TextFormField(
                               decoration: textInputDeco,
                               validator:
@@ -94,6 +94,7 @@ class _LoginState extends State<Login> {
                             ),
                             SizedBox(height: 15),
                             TextFormField(
+                              obscureText: true,
                               decoration: textInputDeco.copyWith(
                                 hintText: "Password",
                               ),
@@ -108,9 +109,36 @@ class _LoginState extends State<Login> {
                                 });
                               },
                             ),
+                            SizedBox(height: 10),
+                            Text(error, style: TextStyle(color: Colors.red)),
+                            SizedBox(height: 10),
 
-                            MainButton(buttonTitle: "Login"),
-                            SizedBox(height: 15),
+                            GestureDetector(
+                              onTap: () async {
+                                dynamic result = await _auth
+                                    .loginusingEmailAndPassword(
+                                      email,
+                                      password,
+                                    );
+                                if (result == null) {
+                                  setState(() {
+                                    error =
+                                        "Can't login with those credentials";
+                                  });
+                                }
+                              },
+                              child: MainButton(buttonTitle: "Login"),
+                            ),
+                            SizedBox(height: 10),
+                            GestureDetector(
+                              onTap: () async {
+                                await _auth.siginAnonymously();
+                              },
+                              child: MainButton(
+                                buttonTitle: "Login as a Guest",
+                              ),
+                            ),
+                            SizedBox(height: 20),
 
                             Text("Login with Social Accounts"),
                             Center(
@@ -126,7 +154,7 @@ class _LoginState extends State<Login> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Dont have an Accounts?"),
+                                Text("Don't have an Account?"),
                                 SizedBox(width: 10),
                                 GestureDetector(
                                   onTap: () {
@@ -143,18 +171,18 @@ class _LoginState extends State<Login> {
                               ],
                             ),
                             SizedBox(height: 30),
-                            ElevatedButton(
-                              onPressed: () async {
-                                dynamic result = await _auth.siginAnonymously();
-                                if (result == null) {
-                                  print("Erorr in Anonymous Login");
-                                } else {
-                                  print("Login Anonymous");
-                                  print(result.uid);
-                                }
-                              },
-                              child: const Text("Login Anonymously"),
-                            ),
+                            //ElevatedButton(
+                            //onPressed: () async {
+                            //dynamic result = await _auth.siginAnonymously();
+                            //if (result == null) {
+                            //print("Erorr in Anonymous Login");
+                            //} else {
+                            //print("Login Anonymous");
+                            //print(result.uid);
+                            //}
+                            //},
+                            //child: const Text("Login Anonymously"),
+                            //),
                           ],
                         ),
                       ),

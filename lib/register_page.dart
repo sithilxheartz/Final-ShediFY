@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/authServices.dart';
+import 'package:firebase_auth_tutorials/services/auth_services.dart';
 import 'package:firebase_auth_tutorials/shared/main_button.dart';
 import 'package:firebase_auth_tutorials/shared/styles.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
@@ -58,9 +58,9 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                   Text(
-                    "Register",
+                    "Welcome,",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: iconTextColor,
                     ),
@@ -74,7 +74,7 @@ class _RegisterState extends State<Register> {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   children: [
-                    SizedBox(height: 15),
+                    SizedBox(height: 30),
                     TextFormField(
                       decoration: textInputDeco,
                       validator:
@@ -88,6 +88,7 @@ class _RegisterState extends State<Register> {
                     ),
                     SizedBox(height: 15),
                     TextFormField(
+                      obscureText: true,
                       decoration: textInputDeco.copyWith(hintText: "Password"),
                       validator:
                           (val) =>
@@ -101,8 +102,7 @@ class _RegisterState extends State<Register> {
                     SizedBox(height: 10),
                     // error text
                     Text(error, style: TextStyle(color: Colors.red)),
-                    SizedBox(height: 20),
-                    SizedBox(height: 35),
+                    SizedBox(height: 10),
                     GestureDetector(
                       onTap: () async {
                         dynamic result = await _auth
@@ -116,7 +116,7 @@ class _RegisterState extends State<Register> {
                       },
                       child: MainButton(buttonTitle: "Register"),
                     ),
-                    SizedBox(height: 15),
+                    SizedBox(height: 20),
                     Text("Login with Social Accounts"),
                     Center(
                       child: GestureDetector(
@@ -128,7 +128,7 @@ class _RegisterState extends State<Register> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Ypu have an Accounts?"),
+                        Text("You have an Account?"),
                         SizedBox(width: 10),
                         GestureDetector(
                           onTap: () {
