@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/services/auth_services.dart';
+import 'package:firebase_auth_tutorials/auth_services.dart';
 import 'package:firebase_auth_tutorials/shared/main_button.dart';
 import 'package:firebase_auth_tutorials/shared/styles.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';

@@ -1,6 +1,6 @@
 import 'package:firebase_auth_tutorials/authenticater.dart';
-import 'package:firebase_auth_tutorials/pages/home_page.dart';
-import 'package:firebase_auth_tutorials/models/user_model.dart';
+import 'package:firebase_auth_tutorials/home_page.dart';
+import 'package:firebase_auth_tutorials/model_user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
