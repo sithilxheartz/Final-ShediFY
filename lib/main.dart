@@ -3,6 +3,7 @@ import 'package:firebase_auth_tutorials/model_user.dart';
 import 'package:firebase_auth_tutorials/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -19,7 +20,15 @@ class MyApp extends StatelessWidget {
     return StreamProvider<Usermodel?>.value(
       initialData: Usermodel(uid: "null"),
       value: AuthteServices().user,
-      child: MaterialApp(home: Wrapper()),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Wrapper(),
+        theme: ThemeData(
+          fontFamily: GoogleFonts.poppins().fontFamily,
+
+          brightness: Brightness.light,
+        ),
+      ),
     );
   }
 }

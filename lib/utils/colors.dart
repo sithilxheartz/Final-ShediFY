@@ -8,7 +8,8 @@ const Color mainTextColor = Colors.white;
 
 const Color hintTextColor = Color.fromARGB(255, 37, 35, 35);
 
-const Color iconBgColor = Color.fromARGB(255, 39, 9, 171);
+const Color iconColor = Color.fromARGB(255, 39, 9, 171);
+const Color iconSubColor = Color.fromARGB(255, 184, 210, 255);
 const Color iconTextColor = Colors.white;
 
 Color primaryColor = const Color(0XFF3ECF8E);

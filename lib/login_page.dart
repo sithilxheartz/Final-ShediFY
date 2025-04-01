@@ -35,7 +35,7 @@ class _LoginState extends State<Login> {
                   width: double.infinity,
                   height: 300,
                   decoration: BoxDecoration(
-                    color: iconBgColor,
+                    color: iconColor,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30),
@@ -163,7 +163,7 @@ class _LoginState extends State<Login> {
                                   child: Text(
                                     "REGISTER",
                                     style: TextStyle(
-                                      color: iconBgColor,
+                                      color: iconColor,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),

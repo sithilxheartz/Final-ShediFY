@@ -1,5 +1,5 @@
 import 'package:firebase_auth_tutorials/authenticater.dart';
-import 'package:firebase_auth_tutorials/home_page.dart';
+import 'package:firebase_auth_tutorials/dashboard_page.dart';
 import 'package:firebase_auth_tutorials/model_user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +15,7 @@ class Wrapper extends StatelessWidget {
     if (user == null) {
       return Authenticate();
     } else {
-      return Home();
+      return Dashboard();
     }
   }
 }
