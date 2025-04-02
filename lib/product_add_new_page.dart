@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/dashboard_page.dart';
+import 'package:firebase_auth_tutorials/test_page.dart';
 import 'package:firebase_auth_tutorials/product_menu_page.dart';
 import 'package:firebase_auth_tutorials/product_model.dart';
 import 'package:firebase_auth_tutorials/product_service.dart';
@@ -73,13 +73,23 @@ class AddNewProductPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Add New Product",
-                  style: TextStyle(
-                    color: iconColor,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                  ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.add_business_rounded,
+                      color: mainColor,
+                      size: 35,
+                    ),
+                    SizedBox(width: 5),
+                    Text(
+                      "Add New Product",
+                      style: TextStyle(
+                        color: mainColor,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 5),
                 Text(
@@ -90,7 +100,8 @@ class AddNewProductPage extends StatelessWidget {
                     fontSize: 13,
                   ),
                 ),
-                SizedBox(height: 15),
+                Divider(),
+
                 CustomInput(
                   controller: _productNameController,
                   labelText: "Product Name",

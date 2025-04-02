@@ -88,18 +88,14 @@ class FuelAddStock extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(
-                      Icons.local_gas_station_rounded,
-                      color: iconColor,
-                      size: 35,
-                    ),
+                    Icon(Icons.update_rounded, color: mainColor, size: 35),
                     SizedBox(width: 5),
                     Text(
                       "Add Fuel Stock Readings",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: iconColor,
+                        color: mainColor,
                       ),
                     ),
                   ],
@@ -159,15 +155,6 @@ class FuelAddStock extends StatelessWidget {
                 CustomButton(
                   labelText: "Add Fuel Stock",
                   onPressed: () => _submitForm(context),
-                ),
-                CustomButton(
-                  labelText: "View Updated Fuel Stock",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => FuelStockView()),
-                    );
-                  },
                 ),
               ],
             ),

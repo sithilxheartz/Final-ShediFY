@@ -11,14 +11,14 @@ class MainButton extends StatelessWidget {
       height: 55,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: iconColor,
+        color: mainColor,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Center(
         child: Text(
           buttonTitle,
           style: TextStyle(
-            color: iconTextColor,
+            color: someIconColor,
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),

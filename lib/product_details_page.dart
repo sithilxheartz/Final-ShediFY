@@ -44,12 +44,12 @@ class ProductDetailsPage extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.oil_barrel_rounded, size: 40, color: iconColor),
+                  Icon(Icons.oil_barrel_rounded, size: 40, color: mainColor),
                   SizedBox(width: 5),
                   Text(
                     product.name,
                     style: TextStyle(
-                      color: iconColor,
+                      color: mainColor,
                       fontSize: 25,
                       fontWeight: FontWeight.w900,
                     ),
@@ -143,7 +143,7 @@ class ProductDetailsPage extends StatelessWidget {
                     ),
                     CustomButton(
                       labelText: "Buy now ${product.name} ${product.size}",
-                      BgColor: iconColor,
+                      BgColor: mainColor,
                       onPressed: () => _submitQuantityForm(context),
                     ),
                   ],

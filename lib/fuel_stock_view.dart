@@ -22,7 +22,7 @@ class _FuelStockViewState extends State<FuelStockView> {
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: Card(
         shape: RoundedRectangleBorder(
-          side: BorderSide(color: iconColor),
+          side: BorderSide(color: mainColor),
           borderRadius: BorderRadius.circular(10),
         ),
 
@@ -40,7 +40,7 @@ class _FuelStockViewState extends State<FuelStockView> {
               LinearProgressIndicator(
                 value: progress.clamp(0.0, 1.0), // Keep between 0 and 1
                 backgroundColor: Colors.grey.shade300,
-                color: iconColor,
+                color: mainColor,
                 borderRadius: BorderRadius.circular(7),
                 minHeight: 30,
               ),
@@ -83,7 +83,7 @@ class _FuelStockViewState extends State<FuelStockView> {
                     children: [
                       Icon(
                         Icons.local_gas_station_rounded,
-                        color: iconColor,
+                        color: mainColor,
                         size: 40,
                       ),
                       SizedBox(width: 5),
@@ -92,12 +92,12 @@ class _FuelStockViewState extends State<FuelStockView> {
                         style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
-                          color: iconColor,
+                          color: mainColor,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 5),
+                  SizedBox(height: 10),
                   Text(
                     "Real-time fuel stocks at a glance. Monitor your inventory levels here.",
                     style: TextStyle(
@@ -116,7 +116,6 @@ class _FuelStockViewState extends State<FuelStockView> {
                           color: Colors.black.withOpacity(0.7),
                         ),
                       ),
-
                       Text(
                         DateFormat('yyyy-MM-dd').format(DateTime.now()),
                         style: TextStyle(

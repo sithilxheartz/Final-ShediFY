@@ -64,12 +64,12 @@ class ProductPurchasePage extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.shopping_cart, size: 40, color: iconColor),
+                  Icon(Icons.shopping_cart, size: 40, color: mainColor),
                   SizedBox(width: 5),
                   Text(
                     "Proceed to Purchase",
                     style: TextStyle(
-                      color: iconColor,
+                      color: mainColor,
                       fontSize: 25,
                       fontWeight: FontWeight.w900,
                     ),

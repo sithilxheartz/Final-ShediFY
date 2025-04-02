@@ -35,7 +35,7 @@ class _LoginState extends State<Login> {
                   width: double.infinity,
                   height: 300,
                   decoration: BoxDecoration(
-                    color: iconColor,
+                    color: mainColor,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30),
@@ -48,7 +48,7 @@ class _LoginState extends State<Login> {
                         child: Icon(
                           Icons.local_gas_station,
                           size: 70,
-                          color: iconTextColor,
+                          color: someIconColor,
                         ),
                       ),
                       Text(
@@ -56,7 +56,7 @@ class _LoginState extends State<Login> {
                         style: TextStyle(
                           fontSize: 60,
                           fontWeight: FontWeight.bold,
-                          color: iconTextColor,
+                          color: someIconColor,
                         ),
                       ),
                       Text(
@@ -64,7 +64,7 @@ class _LoginState extends State<Login> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: iconTextColor,
+                          color: someIconColor,
                         ),
                       ),
                     ],
@@ -163,7 +163,7 @@ class _LoginState extends State<Login> {
                                   child: Text(
                                     "REGISTER",
                                     style: TextStyle(
-                                      color: iconColor,
+                                      color: mainColor,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),

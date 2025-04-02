@@ -10,7 +10,7 @@ var textInputDeco = InputDecoration(
   filled: true,
   fillColor: Colors.black.withOpacity(0.2),
   focusedBorder: OutlineInputBorder(
-    borderSide: const BorderSide(color: iconColor, width: 1.5),
+    borderSide: const BorderSide(color: mainColor, width: 1.5),
     borderRadius: BorderRadius.circular(20),
   ),
   enabledBorder: OutlineInputBorder(
