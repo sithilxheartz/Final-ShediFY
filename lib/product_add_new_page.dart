@@ -96,8 +96,7 @@ class AddNewProductPage extends StatelessWidget {
                   "Fill in the details below to add a new product.",
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.7),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 13,
+                    fontSize: 15,
                   ),
                 ),
                 Divider(),

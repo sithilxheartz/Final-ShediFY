@@ -109,25 +109,7 @@ class FuelAddStock extends StatelessWidget {
                   ),
                 ),
                 Divider(),
-                ValueListenableBuilder<DateTime>(
-                  valueListenable: _selectedDate,
-                  builder: (context, date, child) {
-                    return Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "Date: ${date.toLocal().toString().split(" ")[0]}",
-                            style: TextStyle(fontSize: 16),
-                          ),
-                        ),
-                        IconButton(
-                          onPressed: () => _selectDate(context),
-                          icon: Icon(Icons.calendar_today),
-                        ),
-                      ],
-                    );
-                  },
-                ),
+
                 _buildCustomInput(
                   "Enter Auto Diesel Reading",
                   _tank1Controller,

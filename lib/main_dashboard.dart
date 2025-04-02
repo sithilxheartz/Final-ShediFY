@@ -1,6 +1,7 @@
 import 'package:firebase_auth_tutorials/auth_services.dart';
 import 'package:firebase_auth_tutorials/dashboard_button.dart';
 import 'package:firebase_auth_tutorials/shared/custom_button.dart';
+import 'package:firebase_auth_tutorials/shift_view_page.dart';
 import 'package:firebase_auth_tutorials/test_page.dart';
 import 'package:firebase_auth_tutorials/fuel_stock_view.dart';
 import 'package:firebase_auth_tutorials/management_page.dart';
@@ -83,7 +84,7 @@ class _MainDashboardState extends State<MainDashboard> {
                 subtitle:
                     "View shift schedules along with detailed information.",
                 icon: Icons.calendar_today_outlined,
-                routePage: TestPage(),
+                routePage: ShiftViewPage(),
               ),
               DashboardButton(
                 title: "App Manager",

@@ -101,7 +101,7 @@ class _FuelStockViewState extends State<FuelStockView> {
                   Text(
                     "Real-time fuel stocks at a glance. Monitor your inventory levels here.",
                     style: TextStyle(
-                      fontSize: 15,
+                      fontSize: 13,
                       color: Colors.black.withOpacity(0.7),
                     ),
                   ),

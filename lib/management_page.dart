@@ -1,5 +1,7 @@
+import 'package:firebase_auth_tutorials/add_pumper_page.dart';
 import 'package:firebase_auth_tutorials/dashboard_button.dart';
 import 'package:firebase_auth_tutorials/fuel_stock_add.dart';
+import 'package:firebase_auth_tutorials/shift_add_page.dart';
 import 'package:firebase_auth_tutorials/test_page.dart';
 import 'package:firebase_auth_tutorials/product_add_new_page.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
@@ -59,13 +61,13 @@ class ManagementPage extends StatelessWidget {
                 title: "Update Schedules",
                 subtitle: "Use this section to update shift schedule.",
                 icon: Icons.edit_calendar_outlined,
-                routePage: TestPage(),
+                routePage: ShiftAddPage(),
               ),
               DashboardButton(
                 title: "Add New Pumper",
                 subtitle: "Use this section to add a new pumper.",
                 icon: Icons.person_add_alt,
-                routePage: TestPage(),
+                routePage: AddPumperPage(),
               ),
             ],
           ),
