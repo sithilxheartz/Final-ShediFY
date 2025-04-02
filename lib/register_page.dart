@@ -1,4 +1,5 @@
 import 'package:firebase_auth_tutorials/auth_services.dart';
+import 'package:firebase_auth_tutorials/shared/custom_input.dart';
 import 'package:firebase_auth_tutorials/shared/main_button.dart';
 import 'package:firebase_auth_tutorials/shared/styles.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
@@ -27,82 +28,128 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              width: double.infinity,
-              height: 300,
-              decoration: BoxDecoration(
-                color: mainColor,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
-              ),
-              child: Column(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 15, right: 15, top: 200),
+          child: Column(
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 50),
-                    child: Icon(
-                      Icons.local_gas_station,
-                      size: 70,
-                      color: someIconColor,
-                    ),
-                  ),
-                  Text(
-                    "ShediFY",
-                    style: TextStyle(
-                      fontSize: 60,
-                      fontWeight: FontWeight.bold,
-                      color: someIconColor,
-                    ),
-                  ),
-                  Text(
-                    "Welcome,",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: someIconColor,
-                    ),
+                  Image.asset("assets/logo.png", width: 80),
+                  SizedBox(width: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "ShediFY",
+                        style: TextStyle(
+                          color: mainColor,
+                          fontSize: 40,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      Text(
+                        "Ease Your Life With Us",
+                        style: TextStyle(
+                          color: subTextColor,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ),
-            Form(
-              key: _formKey,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+              Form(
+                key: _formKey,
                 child: Column(
                   children: [
                     SizedBox(height: 30),
-                    TextFormField(
-                      decoration: textInputDeco,
-                      validator:
-                          (val) =>
-                              val?.isEmpty == true ? "Enter Valid Email" : null,
-                      onChanged: (val) {
-                        setState(() {
-                          email = val;
-                        });
-                      },
-                    ),
-                    SizedBox(height: 15),
-                    TextFormField(
-                      obscureText: true,
-                      decoration: textInputDeco.copyWith(hintText: "Password"),
-                      validator:
-                          (val) =>
-                              val!.length < 6 ? "Enter Valid Password" : null,
-                      onChanged: (val) {
-                        setState(() {
-                          password = val;
-                        });
-                      },
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Let's Register,",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 10),
-                    // error text
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5),
+                      child: TextFormField(
+                        validator:
+                            (val) =>
+                                val?.isEmpty == true
+                                    ? "Enter Valid Email"
+                                    : null,
+                        onChanged: (val) {
+                          setState(() {
+                            email = val;
+                          });
+                        },
+                        decoration: InputDecoration(
+                          labelText: "Email",
+                          labelStyle: const TextStyle(
+                            color: Colors.black,
+                            fontSize: 13,
+                          ),
+
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: mainColor),
+                            borderRadius: BorderRadius.circular(12.0),
+                          ),
+                          filled: true,
+                          contentPadding: const EdgeInsets.symmetric(
+                            vertical: 13.0,
+                            horizontal: 12.0,
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5),
+                      child: TextFormField(
+                        validator:
+                            (val) =>
+                                val!.length < 6 ? "Enter Valid Password" : null,
+                        onChanged: (val) {
+                          setState(() {
+                            password = val;
+                          });
+                        },
+                        decoration: InputDecoration(
+                          labelText: "Password",
+                          labelStyle: const TextStyle(
+                            color: Colors.black,
+                            fontSize: 13,
+                          ),
+
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: mainColor),
+                            borderRadius: BorderRadius.circular(12.0),
+                          ),
+                          filled: true,
+                          contentPadding: const EdgeInsets.symmetric(
+                            vertical: 13.0,
+                            horizontal: 12.0,
+                          ),
+                        ),
+                      ),
+                    ),
                     Text(error, style: TextStyle(color: Colors.red)),
-                    SizedBox(height: 10),
+                    SizedBox(height: 5),
                     GestureDetector(
                       onTap: () async {
                         dynamic result = await _auth
@@ -117,25 +164,17 @@ class _RegisterState extends State<Register> {
                       child: MainButton(buttonTitle: "Register"),
                     ),
                     SizedBox(height: 20),
-                    Text("Login with Social Accounts"),
-                    Center(
-                      child: GestureDetector(
-                        onTap: () {},
-                        child: Image.asset("assets/ggogle.png", height: 90),
-                      ),
-                    ),
-                    SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("You have an Account?"),
-                        SizedBox(width: 10),
+                        Text("Already have an Account?"),
+                        SizedBox(width: 5),
                         GestureDetector(
                           onTap: () {
                             widget.toggle();
                           },
                           child: Text(
-                            "LOGIN",
+                            "SIGN IN",
                             style: TextStyle(
                               color: mainColor,
                               fontWeight: FontWeight.bold,
@@ -144,11 +183,22 @@ class _RegisterState extends State<Register> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 130),
+                    Text(
+                      textAlign: TextAlign.center,
+                      "© 2025 ShediFY - All rights reserved.",
+                      style: TextStyle(color: subTextColor, fontSize: 13),
+                    ),
+                    Text(
+                      textAlign: TextAlign.center,
+                      "Privacy Policy | Terms of Service",
+                      style: TextStyle(color: subTextColor, fontSize: 13),
+                    ),
                   ],
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

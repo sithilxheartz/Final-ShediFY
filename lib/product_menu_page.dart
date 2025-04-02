@@ -65,10 +65,7 @@ class ProductMenuPage extends StatelessWidget {
                           vertical: MediaQuery.of(context).size.height / 5,
                         ),
                         child: Column(
-                          children: [
-                            Image.asset("assets/course.png", width: 200),
-                            Text("No Products are available."),
-                          ],
+                          children: [Text("No Products are available.")],
                         ),
                       ),
                     );
@@ -83,6 +80,10 @@ class ProductMenuPage extends StatelessWidget {
                         final product = products[index];
                         return Card(
                           elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(color: mainColor),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                           color: subColor,
                           margin: EdgeInsets.symmetric(vertical: 8),
                           child: ListTile(

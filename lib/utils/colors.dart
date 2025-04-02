@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // light theme colors
 
 const Color mainColor = Color.fromARGB(255, 39, 9, 171);
-const Color subColor = Color.fromARGB(255, 184, 210, 255);
+const Color subColor = Color.fromARGB(255, 195, 217, 255);
 
 const Color mainTextColor = Colors.black;
 const Color subTextColor = Colors.black54;

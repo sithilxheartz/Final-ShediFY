@@ -187,7 +187,16 @@ class _AddPumperPageState extends State<AddPumperPage> {
                   labelText: "Add Pumper",
                   onPressed: () => _submitForm(context),
                 ),
-
+                Divider(),
+                Text(
+                  "Currunt Pumpers on duty",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 5),
                 StreamBuilder(
                   stream: PumperService().pumpers,
                   builder: (context, snapshot) {
@@ -215,7 +224,6 @@ class _AddPumperPageState extends State<AddPumperPage> {
                           final pumper = pumpers[index];
                           return Card(
                             elevation: 0,
-                            color: subColor,
                             shape: RoundedRectangleBorder(
                               side: BorderSide(color: mainColor),
                               borderRadius: BorderRadius.circular(10),

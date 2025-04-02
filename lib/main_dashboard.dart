@@ -92,7 +92,7 @@ class _MainDashboardState extends State<MainDashboard> {
                 icon: Icons.settings,
                 routePage: ManagementPage(),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               Text(
                 textAlign: TextAlign.center,
                 "© 2025 ShediFY - All rights reserved.",

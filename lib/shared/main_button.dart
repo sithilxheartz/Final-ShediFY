@@ -8,18 +8,18 @@ class MainButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 55,
+      height: 50,
       width: double.infinity,
       decoration: BoxDecoration(
         color: mainColor,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
         child: Text(
           buttonTitle,
           style: TextStyle(
             color: someIconColor,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
