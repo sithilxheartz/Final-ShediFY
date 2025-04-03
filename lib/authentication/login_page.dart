@@ -160,13 +160,13 @@ class _LoginState extends State<Login> {
                       },
                       child: MainButton(buttonTitle: "Sign In"),
                     ),
-                    SizedBox(height: 10),
-                    GestureDetector(
-                      onTap: () async {
-                        await _auth.siginAnonymously();
-                      },
-                      child: MainButton(buttonTitle: "Login as a Guest"),
-                    ),
+                    // SizedBox(height: 10),
+                    // GestureDetector(
+                    //   onTap: () async {
+                    //     await _auth.siginAnonymously();
+                    //   },
+                    //   child: MainButton(buttonTitle: "Login as a Guest"),
+                    // ),
                     SizedBox(height: 20),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
