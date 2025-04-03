@@ -26,21 +26,6 @@ class ShiftService {
     }
   }
 
-  // // methods to gell all the elements from the firestore collection
-  // // get all products as a stream list of course
-  // Stream<List<Shift>> get shifts {
-  //   try {
-  //     return shiftCollection.snapshots().map((snapshot) {
-  //       return snapshot.docs
-  //           .map((doc) => Shift.fromJson(doc.data() as Map<String, dynamic>))
-  //           .toList();
-  //     });
-  //   } catch (error) {
-  //     print("Error found: $error");
-  //     return Stream.empty();
-  //   }
-  // }
-
   Stream<List<Shift>> getShiftsByDate(DateTime selectedDate) {
     try {
       return shiftCollection

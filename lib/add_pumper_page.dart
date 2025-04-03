@@ -268,7 +268,7 @@ class _AddPumperPageState extends State<AddPumperPage> {
                                   // todo delete button
                                   SizedBox(width: 30),
                                   GestureDetector(
-                                    onTap: () {
+                                    onDoubleTap: () {
                                       PumperService().deleteTask(pumper.id);
                                     },
                                     child: Icon(

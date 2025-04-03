@@ -125,6 +125,10 @@ class _ShiftAddPageState extends State<ShiftAddPage> {
                   decoration: InputDecoration(
                     filled: true,
                     labelText: "Select a Pump",
+                    labelStyle: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 13,
+                    ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
@@ -159,6 +163,10 @@ class _ShiftAddPageState extends State<ShiftAddPage> {
                 child: DropdownButtonFormField<String>(
                   decoration: InputDecoration(
                     filled: true,
+                    labelStyle: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 13,
+                    ),
                     labelText: "Select Shift Type",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0),
@@ -195,6 +203,10 @@ class _ShiftAddPageState extends State<ShiftAddPage> {
                         snapshot.data!.map((p) => p.name).toList();
                     return DropdownButtonFormField<String>(
                       decoration: InputDecoration(
+                        labelStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 13,
+                        ),
                         filled: true,
                         labelText: "Select Pumper",
                         border: OutlineInputBorder(

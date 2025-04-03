@@ -107,16 +107,34 @@ class _MainDashboardState extends State<MainDashboard> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-          await _auth.signOut();
-        },
-        backgroundColor: Colors.red,
-        elevation: 1,
-        child: Icon(
-          Icons.power_settings_new_outlined,
-          color: Colors.white,
-          size: 35,
+
+      floatingActionButton: SizedBox(
+        width: 180, // Custom width
+        height: 50, // Custom height
+        child: FloatingActionButton(
+          onPressed: () async {
+            await _auth.signOut();
+            // Action here
+          },
+          backgroundColor: Colors.red,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.power_settings_new_outlined,
+                color: Colors.white,
+                size: 20,
+              ),
+              SizedBox(width: 5),
+              Text(
+                "Log Out",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ), // Adjust icon size
         ),
       ),
     );

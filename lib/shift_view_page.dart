@@ -1,3 +1,5 @@
+import 'package:firebase_auth_tutorials/shift_add_page.dart';
+import 'package:firebase_auth_tutorials/shift_request_page.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'shift_service.dart';
@@ -64,7 +66,7 @@ class _ShiftViewPageState extends State<ShiftViewPage> {
               ),
             ),
             Text(
-              "Click a shift to view details.",
+              "Select a date to view the shift details for that day.",
               style: TextStyle(color: Colors.black54, fontSize: 13),
             ),
             Divider(),
@@ -211,6 +213,38 @@ class _ShiftViewPageState extends State<ShiftViewPage> {
               },
             ),
           ],
+        ),
+      ),
+      floatingActionButton: SizedBox(
+        width: 180, // Custom width
+        height: 50, // Custom height
+        child: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ShiftRequestPage()),
+            );
+            // Action here
+          },
+          backgroundColor: mainColor,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.pending_actions_outlined,
+                color: Colors.white,
+                size: 20,
+              ),
+              SizedBox(width: 5),
+              Text(
+                "Request a Change",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ), // Adjust icon size
         ),
       ),
     );

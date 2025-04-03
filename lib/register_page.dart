@@ -126,6 +126,7 @@ class _RegisterState extends State<Register> {
                             password = val;
                           });
                         },
+                        obscureText: true,
                         decoration: InputDecoration(
                           labelText: "Password",
                           labelStyle: const TextStyle(
