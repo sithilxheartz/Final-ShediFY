@@ -1,10 +1,9 @@
-import 'package:firebase_auth_tutorials/shift_add_page.dart';
-import 'package:firebase_auth_tutorials/shift_request_page.dart';
+import 'package:firebase_auth_tutorials/pages/shift_request_page.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'shift_service.dart';
-import 'utils/colors.dart';
-import 'shift_model.dart';
+import '../services/shift_service.dart';
+import '../utils/colors.dart';
+import '../models/shift_model.dart';
 
 class ShiftViewPage extends StatefulWidget {
   const ShiftViewPage({super.key});

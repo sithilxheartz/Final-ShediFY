@@ -1,5 +1,5 @@
-import 'package:firebase_auth_tutorials/login_page.dart';
-import 'package:firebase_auth_tutorials/register_page.dart';
+import 'package:firebase_auth_tutorials/authentication/login_page.dart';
+import 'package:firebase_auth_tutorials/authentication/register_page.dart';
 import 'package:flutter/material.dart';
 
 class Authenticate extends StatefulWidget {

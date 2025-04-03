@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth_tutorials/pumper_model.dart';
+import 'package:firebase_auth_tutorials/models/pumper_model.dart';
 
 class PumperService {
   // reference to the firestore collection

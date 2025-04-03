@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth_tutorials/fuel_stock_model.dart';
+import 'package:firebase_auth_tutorials/models/fuel_stock_model.dart';
 
 class FuelStockService {
   // Reference to the fuel stock collection

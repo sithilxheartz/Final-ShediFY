@@ -1,4 +1,4 @@
-import 'package:firebase_auth_tutorials/shift_request_service.dart';
+import 'package:firebase_auth_tutorials/services/shift_request_service.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

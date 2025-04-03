@@ -1,11 +1,9 @@
-import 'package:firebase_auth_tutorials/auth_services.dart';
-import 'package:firebase_auth_tutorials/dashboard_button.dart';
-import 'package:firebase_auth_tutorials/shared/custom_button.dart';
-import 'package:firebase_auth_tutorials/shift_view_page.dart';
-import 'package:firebase_auth_tutorials/test_page.dart';
-import 'package:firebase_auth_tutorials/fuel_stock_view.dart';
-import 'package:firebase_auth_tutorials/management_page.dart';
-import 'package:firebase_auth_tutorials/product_menu_page.dart';
+import 'package:firebase_auth_tutorials/services/authenticater_service.dart';
+import 'package:firebase_auth_tutorials/widgets/menu_button.dart';
+import 'package:firebase_auth_tutorials/pages/shift_view_page.dart';
+import 'package:firebase_auth_tutorials/pages/fuel_stock_view_page.dart';
+import 'package:firebase_auth_tutorials/pages/dashboard_management.dart';
+import 'package:firebase_auth_tutorials/pages/product_menu_page.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,5 @@
-import 'package:firebase_auth_tutorials/product_details_page.dart';
-import 'package:firebase_auth_tutorials/product_service.dart';
+import 'package:firebase_auth_tutorials/pages/product_details_page.dart';
+import 'package:firebase_auth_tutorials/services/product_service.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:flutter/material.dart';
 

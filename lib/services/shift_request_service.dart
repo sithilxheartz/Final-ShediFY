@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth_tutorials/shift_request_model.dart';
+import 'package:firebase_auth_tutorials/models/shift_request_model.dart';
 
 class ShiftRequestService {
   // Reference to the fuel stock collection

@@ -1,13 +1,10 @@
-import 'package:firebase_auth_tutorials/test_page.dart';
-import 'package:firebase_auth_tutorials/product_menu_page.dart';
-import 'package:firebase_auth_tutorials/product_model.dart';
-import 'package:firebase_auth_tutorials/product_service.dart';
-import 'package:firebase_auth_tutorials/shared/custom_button.dart';
-import 'package:firebase_auth_tutorials/shared/custom_input.dart';
+import 'package:firebase_auth_tutorials/models/product_model.dart';
+import 'package:firebase_auth_tutorials/services/product_service.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_button.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_input.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:firebase_auth_tutorials/utils/snack_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class AddNewProductPage extends StatelessWidget {
   AddNewProductPage({super.key});

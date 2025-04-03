@@ -1,11 +1,11 @@
-import 'package:firebase_auth_tutorials/shared/custom_button.dart';
-import 'package:firebase_auth_tutorials/shift_model.dart';
-import 'package:firebase_auth_tutorials/shift_service.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_button.dart';
+import 'package:firebase_auth_tutorials/models/shift_model.dart';
+import 'package:firebase_auth_tutorials/services/shift_service.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:firebase_auth_tutorials/utils/snack_bar.dart' show showSnackBar;
 import 'package:flutter/material.dart';
-import 'package:firebase_auth_tutorials/pumper_service.dart';
-import 'package:firebase_auth_tutorials/pumper_model.dart';
+import 'package:firebase_auth_tutorials/services/pumper_service.dart';
+import 'package:firebase_auth_tutorials/models/pumper_model.dart';
 
 class ShiftAddPage extends StatefulWidget {
   ShiftAddPage({super.key});

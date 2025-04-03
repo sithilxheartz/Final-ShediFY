@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth_tutorials/fuel_stock_service.dart';
-import 'package:firebase_auth_tutorials/fuel_stock_model.dart';
+import 'package:firebase_auth_tutorials/services/fuel_stock_service.dart';
+import 'package:firebase_auth_tutorials/models/fuel_stock_model.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:intl/intl.dart';
 

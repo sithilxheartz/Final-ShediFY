@@ -1,9 +1,9 @@
-import 'package:firebase_auth_tutorials/pumper_model.dart';
-import 'package:firebase_auth_tutorials/pumper_service.dart';
-import 'package:firebase_auth_tutorials/shared/custom_button.dart';
-import 'package:firebase_auth_tutorials/shared/custom_input.dart';
-import 'package:firebase_auth_tutorials/shift_request_model.dart';
-import 'package:firebase_auth_tutorials/shift_request_service.dart';
+import 'package:firebase_auth_tutorials/models/pumper_model.dart';
+import 'package:firebase_auth_tutorials/services/pumper_service.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_button.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_input.dart';
+import 'package:firebase_auth_tutorials/models/shift_request_model.dart';
+import 'package:firebase_auth_tutorials/services/shift_request_service.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:firebase_auth_tutorials/utils/snack_bar.dart';
 import 'package:flutter/material.dart';

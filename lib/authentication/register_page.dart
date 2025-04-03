@@ -1,7 +1,5 @@
-import 'package:firebase_auth_tutorials/auth_services.dart';
-import 'package:firebase_auth_tutorials/shared/custom_input.dart';
-import 'package:firebase_auth_tutorials/shared/main_button.dart';
-import 'package:firebase_auth_tutorials/shared/styles.dart';
+import 'package:firebase_auth_tutorials/services/authenticater_service.dart';
+import 'package:firebase_auth_tutorials/widgets/login_button.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:flutter/material.dart';
 

@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth_tutorials/product_model.dart';
+import 'package:firebase_auth_tutorials/models/product_model.dart';
 
 class ProductService {
   // reference to the firestore collection

@@ -1,6 +1,6 @@
-import 'package:firebase_auth_tutorials/product_model.dart';
-import 'package:firebase_auth_tutorials/shared/custom_button.dart';
-import 'package:firebase_auth_tutorials/shared/custom_input.dart';
+import 'package:firebase_auth_tutorials/models/product_model.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_button.dart';
+import 'package:firebase_auth_tutorials/widgets/custom_input.dart';
 import 'package:firebase_auth_tutorials/utils/colors.dart';
 import 'package:firebase_auth_tutorials/utils/snack_bar.dart';
 import 'package:flutter/material.dart';
