@@ -1,4 +1,4 @@
-# 📱 FilliFy – Filling Station Management App (University Project)
+# 📱 ShediFy – Filling Station Management App (University Project)
 
 ShediFy is a smart mobile application designed to streamline operations at fuel stations. 
 
