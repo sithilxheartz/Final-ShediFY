@@ -1,16 +1,32 @@
-"ShediFy" Filling Station Management System Mobile Application 
+# 📱 FilliFy – Filling Station Management App (University Project)
 
-A new Flutter project with Firebase Configured.
+ShediFy is a smart mobile application designed to streamline operations at fuel stations. 
 
-## Getting Started
+![Main UI](Banners/1.png)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ **User-Specific Secure Logins**  
+✅ **Fuel Level Monitoring**  
+✅ **Pumper Shift Management**  
+✅ **Integrated Online Oil Shop**  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠 Tech Stack
+
+- 💙 **Flutter 3.10** – Cross-platform mobile framework  
+- 🔥 **Firebase Firestore** – Cloud database & real-time sync  
+
+---
+
+## 📬 Contact Me
+
+For more information, feedback, or collaboration:
+
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/sithilxheartz/)
+
+---
+
